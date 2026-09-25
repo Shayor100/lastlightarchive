@@ -1,0 +1,95 @@
+LAST LIGHT — NETLIFY PUBLISHING GUIDE
+Prepared 25 September 2026
+
+This package contains the finished 100-card website, soft card styling, full
+original soundtrack, shuffle sound and Shayor Hamid email credit. No build,
+API keys, database or GitHub account are needed for drag-and-drop publishing.
+
+1. DOWNLOAD AND UNZIP
+Download Last-Light-Netlify.zip and unzip it. On a Mac, double-click the ZIP.
+Open the extracted folder: index.html must be directly inside it, alongside
+app.js, style.css, data.js, images.js and the assets folder.
+
+2. SIGN IN AND UPLOAD
+Sign in at https://app.netlify.com/login then visit https://app.netlify.com/drop
+Drag the extracted folder containing index.html into the upload area.
+Keep all files together and preserve the assets folder. Wait for completion.
+The project will receive an address ending in .netlify.app.
+
+3. CHOOSE YOUR ADDRESS
+On Project Overview choose Customize > Manage project name and cover image.
+Choose an available name, for example last-light-archive. This is only a
+suggestion; availability has not been checked. Renaming changes the default URL.
+
+4. MAKE IT PUBLIC
+If the project is private, choose Make public after the deployment succeeds.
+Alternatively go to Project configuration > General > Visitor access >
+Project visibility, select public for production, and save.
+Open the final URL in a private/incognito window to check visitor access.
+
+5. REMOVE THE NETLIFY BADGE
+To retain the uncluttered design, go to Project configuration > General >
+Powered by Netlify badge, turn it off, and save. This does not need a redeploy.
+The exported site has no visible ChatGPT branding and needs no ChatGPT login.
+
+6. CHECK THE FINISHED SITE
+Draw several cards and open 'read the record'. Check the source links and
+pictures. Start the music, draw again and confirm it keeps playing. Click
+Shayor Hamid in the footer to open an email to shayor29@gmail.com. Check on a
+phone as well. The music starts only after a visitor presses the music button.
+
+7. OPTIONAL: USE YOUR OWN DOMAIN
+Buy an available domain from your chosen registrar. In Netlify, open Domain
+management > Production domains, choose Add a domain > Add a domain you already
+own. Enter your domain and follow Netlify's DNS instructions at your registrar.
+Use the exact records Netlify provides. Wait for verification and HTTPS, then
+choose the desired primary domain and test it in a private browser window.
+Buying a domain is optional; you can launch using the .netlify.app address.
+
+8. FUTURE UPDATES
+Keep this ZIP as a backup. After edits, upload the entire updated website
+folder under Production deploys in THIS SAME Netlify project. Do not create
+a new Netlify project for each update. Changes made to the original hosted
+site do not automatically update this separate Netlify copy.
+
+FILES
+index.html — page structure, controls and contact credit
+style.css — responsive design, card edges and dissolve animations
+app.js — shuffle, saved progress, image display and audio behavior
+data.js — 100 historical moments and source links
+images.js — image URLs, captions, credits and licenses
+assets/luciernaga-untitled-ii.mp3 — full original looping soundtrack
+READ-ME-FIRST.txt — this guide (optional to remove before upload)
+
+Images load from their credited online sources; they are not bundled as local
+image files. Internet access is needed for them. Music is included locally.
+Draw history stays in each visitor's browser. A new domain starts fresh history.
+
+IF THE UPLOAD STALLS
+The original music file is about 14.8 MB. Netlify notes that individual files
+over 10 MB can sometimes stall Drop uploads; the original is preserved here.
+Try the extracted folder in a desktop Chromium browser. If needed, use Netlify
+CLI instead (requires Node.js with npm installed). In Terminal, enter the
+extracted website folder, then run:
+
+npx netlify-cli login
+npx netlify-cli deploy --dir . --prod --no-build
+
+Follow the prompts to use your existing project or create a new project if this
+is your first upload. These commands publish the files to Netlify. Then check
+public access and turn off the badge as described above.
+
+IF YOU SEE A 404
+Upload the folder with index.html directly inside it, not a parent folder.
+
+IF YOU SEE THE OLD DESIGN
+Reload the page with a hard refresh and confirm the latest deployment succeeded.
+
+OFFICIAL NETLIFY REFERENCES
+https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/
+https://docs.netlify.com/manage/projects/customize-project-name-and-cover-image/
+https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/
+https://docs.netlify.com/manage/projects/powered-by-netlify-badge/
+https://docs.netlify.com/manage/domains/manage-domains/assign-a-domain-to-your-site-app/
+https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
+https://cli.netlify.com/commands/deploy/

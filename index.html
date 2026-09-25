@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Light — Humanity on the Brink</title>
+<meta name="description" content="Historical crises encountered as a shuffled deck of photographs and human-made images.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111314'/%3E%3Cpath d='M10 8v16h12' fill='none' stroke='%23b5b8b6' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script><script defer src="images.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<div class="ambience" aria-hidden="true"><img id="backdrop" alt="" referrerpolicy="no-referrer"></div>
+<header class="masthead"><a class="brand" href="./" aria-label="Last Light home">last light</a><div class="sound"><button id="music-toggle" type="button" aria-pressed="false" aria-label="Play background music"><span id="music-symbol" aria-hidden="true">▷</span><span id="music-label">music off</span></button><label class="volume"><span class="sr-only">Volume</span><input id="music-volume" aria-label="Music volume" type="range" min="0" max="100" value="35"></label></div></header>
+<audio id="soundtrack" src="assets/luciernaga-untitled-ii.mp3" preload="none" loop></audio>
+<main><section class="installation" aria-label="Historical image and record">
+<figure class="record" id="trading-card">
+<div class="image-wrap"><img id="residue" class="residue" alt="" aria-hidden="true" referrerpolicy="no-referrer"><img id="event-image" alt="" fetchpriority="high"><p id="image-error" hidden>Image unavailable. The original is linked in the record below.</p></div>
+<figcaption class="record-caption" id="story-content"><div class="record-heading"><p class="date" id="year"></p><h1 id="event-title"></h1><p class="location" id="location"></p></div><div class="record-note"><p class="event-deck" id="deck"></p><p class="scope" id="scope"></p></div></figcaption>
+</figure>
+<div class="record-controls"><nav class="deal-controls" aria-label="Explore the archive"><button id="previous" aria-label="Previous record" title="Previous record">←</button><button id="generate-top" class="deal"><span id="deal-label">draw a card</span><span aria-hidden="true">→</span></button></nav><details class="context"><summary>read the record</summary><div class="context-content"><p id="category" class="category"></p><div class="story-body"><p id="what"></p><p id="outcome"></p></div><p id="nuance"></p><div id="source-links" class="source-links"></div><div class="image-credit"><span id="image-kind"></span><p id="caption"></p><a id="image-link" target="_blank" rel="noopener noreferrer">Original image</a></div></div></details></div>
+</section><p id="announcement" class="sr-only" role="status" aria-live="polite"></p><p id="audio-status" class="sr-only" role="status" aria-live="polite"></p><noscript><p>Please enable JavaScript to explore the archive.</p></noscript></main>
+<footer><p>Luciernaga / Untitled II</p><p class="maker">Made by <a href="mailto:shayor29@gmail.com" aria-label="Email Shayor Hamid at shayor29@gmail.com">Shayor Hamid</a></p></footer>
+</body></html>
