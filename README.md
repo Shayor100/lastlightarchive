@@ -3,7 +3,7 @@
 
 An interactive history project exploring moments of global danger, regional catastrophe, and societal upheaval through archival imagery, sound, and randomly drawn cards.
 
-**[Visit Last Light](YOUR_NETLIFY_URL)**
+**[Visit Last Light](https://lastlightarchive.netlify.app/)**
 
 ## The idea
 
