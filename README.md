@@ -1,4 +1,3 @@
-# lastlightarchive
 # Last Light
 
 An interactive history project exploring moments of global danger, regional catastrophe, and societal upheaval through archival imagery, sound, and randomly drawn cards.
@@ -40,9 +39,7 @@ The site can be hosted as static files without a backend, database, or API keys.
 
 Download the project and open `index.html` in a browser. Internet access is needed to load the externally hosted historical images.
 
-The music player expects the soundtrack at:
-
-`assets/luciernaga-untitled-ii.mp3`
+The soundtrack isn't included in this repo, so audio only plays on the [live site](https://lastlightarchive.netlify.app/). To hear it locally, add your own copy at `assets/luciernaga-untitled-ii.mp3`.
 
 ## Sources and credits
 
